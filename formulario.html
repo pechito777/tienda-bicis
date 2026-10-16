@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>FORMULARIO</h1>
+        <p class="subtitulo">
+            Si lo deseas, puedes rellenar el siguiente formulario indicando
+            qué tipo de bicicleta buscas y te responderemos lo antes posible.
+        </p>
+    </header>
+
+    <div class="menu">
+        <a href="index.html">INICIO</a>
+        <a href="bicicletas.html">BICICLETAS</a>
+        <a href="formulario.html">FORMULARIO</a>
+    </div>
+
+        <form class="formulario">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <p>Sexo:</p>
+            <div class="opciones">
+                <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+                <label><input type="radio" name="sexo" value="otro"> Otro</label>
+            </div>
+
+            <p>¿Cómo quieres la bicicleta?</p>
+            <div class="opciones">
+                <label><input type="radio" name="estado" value="nueva"> Nueva</label>
+                <label><input type="radio" name="estado" value="usada"> Puede ser usada</label>
+            </div>
+
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" rows="6"></textarea>
+
+            <input type="submit" value="ENVIAR">
+
+          </form>
+   
+</body>
+</html>
